@@ -38,8 +38,8 @@ export const App = () => {
       <div className="buttons">
         <button
           type="button"
-          className={classNames('button is-info', {
-            'button is-info is-light': sort !== 'alphabetically',
+          className={classNames('button', 'is-info', {
+            'is-light': sort !== 'alphabetically',
           })}
           onClick={() => setSort('alphabetically')}
         >
@@ -48,8 +48,8 @@ export const App = () => {
 
         <button
           type="button"
-          className={classNames('button is-success', {
-            'button is-succes is-light': sort !== 'bylength',
+          className={classNames('button', 'is-success', {
+            'is-light': sort !== 'bylength',
           })}
           onClick={() => setSort('bylength')}
         >
@@ -58,8 +58,8 @@ export const App = () => {
 
         <button
           type="button"
-          className={classNames('button is-warning', {
-            'button is-warning is-light': !reversed,
+          className={classNames('button', 'is-warning', {
+            'is-light': !reversed,
           })}
           onClick={() => setReversed(!reversed)}
         >
